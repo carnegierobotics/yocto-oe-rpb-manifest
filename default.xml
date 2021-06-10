@@ -2,6 +2,7 @@
 <manifest>
   <remote fetch="https://bitbucket.org" name="bitbucket"/>
   <remote fetch="https://github.com" name="github"/>
+  <remote fetch="ssh://git@github.com" name="githubssh"/>
   <remote fetch="http://git.linaro.org" name="linaro"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
@@ -11,7 +12,7 @@
   
   <project name="96boards/meta-96boards" path="layers/meta-96boards" remote="github"/>
   <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github"/>
-  <project name="96boards/oe-rpb-manifest" path="conf" remote="github" revision="qcom/dunfell">
+  <project name="carnegierobotics/yocto-oe-rpb-manifest" path="conf" remote="githubssh" revision="crl/rb5">
     <linkfile dest="setup-environment" src="setup-environment-internal"/>
   </project>
   <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="master"/>
